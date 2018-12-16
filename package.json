@@ -1,0 +1,25 @@
+{
+  "name": "@pown/preferences",
+  "version": "2.0.0",
+  "description": "Pownage guaranteed",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pownjs/pown-preferences.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework"
+  ],
+  "author": "pdp <pdp@gnucitizen.org>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pownjs/pown-preferences/issues"
+  },
+  "homepage": "https://github.com/pownjs/pown-preferences#readme",
+  "dependencies": {}
+}
