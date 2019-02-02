@@ -4,6 +4,7 @@
   "description": "Pownage guaranteed",
   "main": "lib/index.js",
   "scripts": {
+    "preferences": "POWN_ROOT=. pown-cli preferences",
     "test": "mocha"
   },
   "repository": {
@@ -21,5 +22,13 @@
     "url": "https://github.com/pownjs/pown-preferences/issues"
   },
   "homepage": "https://github.com/pownjs/pown-preferences#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "@pown/cli": "^2.10.0"
+  },
+  "dependencies": {},
+  "pown": {
+    "commands": [
+      "lib/commands/preferences.js"
+    ]
+  }
 }
