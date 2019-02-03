@@ -1,6 +1,6 @@
 const assert = require('assert')
 
-const { getPreferences } = require('../lib')
+const { getPreferences, setPreferences } = require('../lib')
 
 describe('getPreferences', () => {
     it('must not error', (done) => {
@@ -24,5 +24,23 @@ describe('getPreferences', () => {
         }
 
         assert.ok(prefs)
+    })
+})
+
+describe('setPreferences', () => {
+    it('must not error', (done) => {
+        setPreferences('test', {test: 123}, (err) => {
+            assert.ok(!err)
+
+            done()
+        })
+    })
+
+    it('must not error (async/await)', async() => {
+        try {
+            setPreferences('test', {test: 123})
+        } catch (err) {
+            async.ok(!err)
+        }
     })
 })
