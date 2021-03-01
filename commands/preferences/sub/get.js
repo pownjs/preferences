@@ -5,7 +5,7 @@ exports.yargs = {
     handler: async(argv) => {
         const { tool, name } = argv
 
-        const { getPreferences } = require('../../preferences')
+        const { getPreferences } = require('../../../lib/preferences')
 
         const preferences = await getPreferences(tool)
 
