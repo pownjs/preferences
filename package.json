@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "preferences": "POWN_ROOT=. pown-cli preferences",
+    "usage": "true",
+    "build": "true",
     "test": "mocha"
   },
   "repository": {
@@ -23,7 +25,8 @@
   },
   "homepage": "https://github.com/pownjs/pown-preferences#readme",
   "devDependencies": {
-    "@pown/cli": "^2.29.0"
+    "@pown/cli": "^2.29.0",
+    "@pown/toolchain": "^2.1.0"
   },
   "dependencies": {},
   "pown": {
